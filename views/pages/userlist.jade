@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			table.table.table-hover.table-bordered
+				thread
+					tr
+						th 用户
+						th 注册时间
+						th 查看
+						th 删除
+				tbody
+					each item in users
+						tr(class="item-id-#{item.id}")
+							td #{item.name}
+							td #{moment(item.meta.createAt).format('DD/MM/YYYY')}
+							td: a(target="_blank", href="../../movie/#{item._id}") 查看
+							td: a(target="_blank", href="../update/#{item._id}") 修改
+							td
+								button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除

@@ -1,0 +1,24 @@
+{
+  "name": "inode",
+  "version": "0.0.1",
+  "description": "inode movie",
+  "main": "bootstrap",
+  "keywords": [
+    "movie"
+  ],
+  "authors": [
+    "Like <guo.like.jean@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
